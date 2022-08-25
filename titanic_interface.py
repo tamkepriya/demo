@@ -2,11 +2,11 @@
 from flask import Flask,jsonify,redirect,request,render_template
 import config
 from titanicsutils import Titanic_Classification
-app=Flask(__name__)
+
 #######################################################################
 ##########################Titanic Classification API##########################
 #######################################################################
-
+app=Flask(__name__)
 @app.route("/")
 def abc():
     return render_template("index.html")
